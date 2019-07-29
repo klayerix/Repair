@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  background-color: #f5f5f5;
 }
 
 img {
@@ -33,6 +34,7 @@ img {
 
 .navbar {
   padding: 8px 0;
+  background-color: #fff;
 }
 
 .navbar-block {
@@ -65,10 +67,13 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-weight: 400;
 }
 
 .navbar__button {
   margin-left: 30px;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .navbar__phone {
@@ -76,7 +81,7 @@ img {
   margin-top: 10px;
   color: #333333;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -90,6 +95,20 @@ img {
   }
   .navbar__logo {
     width: 90px;
+  }
+}
+
+@media (max-width: 568px) {
+  .container {
+    width: 87.6%;
+  }
+  .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navbar__button {
+    font-size: 10px;
+    border-radius: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
