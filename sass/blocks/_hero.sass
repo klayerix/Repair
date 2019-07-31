@@ -9,12 +9,14 @@
 		padding-right: 140px
 		&__title
 			font-size: 41px
-			font-weight: 800
+			font-weight: 400 
 			line-height: 55px
 			margin-bottom: 40px
+			+bold
 		&__subtitle
 			font-size: 20px
 			font-weight: 700
+			+bold
 			display: inline-block
 			margin-bottom: 70px
 	&-list
@@ -39,6 +41,7 @@
 @media (max-width: 1200px)
 	.hero
 		&-block
+			display: flex
 			flex-direction: column
 		&-list
 			margin-bottom: 44px
@@ -48,11 +51,11 @@
 	.hero
 		&-text
 			&__title
-				font-size: 24px
+				font-size: 22px
 				line-height: 1.4
+				font-weight: 700
 				margin-bottom: 15px
 			&__subtitle
-				font-size: 16px
 				margin-bottom: 28px
 		&-list
 			&__item
@@ -64,6 +67,8 @@
 		&-list
 			&__image
 				margin-right: 15px
+				min-width: 40px
+				min-height: 40px
 		&-text
 			&__subtitle
 				font-size: 16px
