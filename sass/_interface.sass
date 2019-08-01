@@ -1,3 +1,5 @@
+*
+	box-sizing: border-box
 body
 	+reg
 img
@@ -17,3 +19,26 @@ img
 	background-color: $main-color
 	border: none
 	padding: 18px 30px
+	&:hover
+		background-color: lighten($main-color, 10%)
+		cursor: pointer
+.section
+	padding: 90px 0
+	&-title
+		font-size: 24px
+		+bold
+	&-subtitle
+		font-size: 16px
+		display: block
+.input
+	border: 1px solid $border-input
+	padding: 20px 26px
+	font-size: 15px
+	border-radius: 10px
+	transition: 0.05s
+	&:focus
+		box-shadow: 0 0 10px orange
+		outline: none
+
+
+
